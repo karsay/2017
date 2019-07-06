@@ -1,0 +1,99 @@
+html 
+{
+  -ms-overflow-style: none;  /* IE10+ */
+}
+body{
+    background: black;
+    color: white;
+    font-family: serif;
+    margin: 0 auto;
+}
+#backImage{
+    background-image: url(../images/shothing-min.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-color: #464646;
+    opacity: 0.05;
+    width: 100vw;
+    height: 100vh;
+    margin: 0 auto;
+    z-index: 0;
+}
+.relative {
+    position: relative;
+}
+#container-fluid{
+    position: absolute;
+    z-index: 1;
+}
+.mainImage img{
+    width: 100%;
+    border-radius: 20px;
+}
+
+#Overview h1{
+    border-bottom: 2px solid white;
+}
+#slideshow {
+    width:640px;
+    height:300px;
+    margin:0 auto;
+    position:relative;
+    }
+    #slideshow img {
+    position:absolute;
+    left:0;
+    top:0;
+    }
+
+
+@media screen and (max-width:599px){
+    /*0px以上で適用する内容*/
+    .mainImage{
+        max-width: 800px;
+        margin-top: 2vw;
+    }
+    .title{
+        margin-top: 30px;
+        font-size: 30px;
+        text-align: center;
+    }
+    table{
+        font-size: 25px;
+    }
+    #Overview{
+        margin-top: 10px;
+        width: 100%;
+    }
+    .caption{
+        margin-top: 10px;
+        font-size: 20px;
+    }
+  }
+
+  @media screen and (min-width:600px){
+    /*600px以上で適用する内容*/
+    .mainImage{
+        margin-left: 3vw;
+        margin-top: 2vw;
+    }
+    .title{
+        margin-left: 3vw;
+        margin-top: 30px;
+        font-size: 3vw;
+    }
+    table{
+        font-size: 30px;
+    }
+    #Overview{
+        margin-top: 120px;
+    }
+    .caption{
+        margin-top: 20px;
+        font-size: 20px;
+    }
+  }
+
+

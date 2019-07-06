@@ -1,0 +1,427 @@
+html 
+{
+  -ms-overflow-style: none;  /* IE10+ */
+  overflow: hidden;
+}
+html::-webkit-scrollbar  /* Webkit(Chrome) */
+{
+  display: none;
+}
+body{
+    background-color: black;
+    padding-top: 200px; 
+    font-family: Lato, "Noto Sans JP", "游ゴシック Medium", "游ゴシック体", "Yu Gothic Medium", YuGothic, "ヒラギノ角ゴ ProN", "Hiragino Kaku Gothic ProN", "メイリオ", Meiryo, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+    width: 100%;
+}
+.section{
+    color: white;
+}
+
+header{
+    opacity: 0.8;
+    position:fixed;
+    top:0;
+    left:0;
+    height: 40px;
+    z-index: 70;
+    width: 100%;
+    padding: 0;
+    margin:0;
+}
+span{
+    color: red;
+}
+/* -------------------------------トップ--------------------------------- */
+.top-wrapper{
+    color: white;
+    font-family: serif;
+    width: 100%;
+    position: relative;
+    text-align: center;
+}
+
+#hoge1{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 0;
+}
+
+.inner{
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    position: absolute;
+    z-index: 1;
+}
+
+.maintitle{
+    font-size: 8vw;
+    letter-spacing: 4.5vw;
+    margin-left: 0.5em;
+}
+/* -------------------------------プロフィール--------------------------------- */
+.profile-wrapper{
+    color: white;
+    font-family: serif;
+    width: 75%;
+    height: 75;
+    position: relative;
+    top: -10%;
+    margin: auto;
+    font-size: 1.5em;
+}
+
+#hoge2{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+/* -------------------------------ワークス--------------------------------- */
+.works-wrapper{
+    color: white;
+    font-family: serif;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    top: 0;
+    margin: auto;
+}
+#hoge3{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.first-image{
+    background: url("../images/web-16-min.jpg");
+    height: 13em;
+    margin: auto;
+    background-position-x: center;
+    background-position-y:40em;
+    overflow: hidden;
+}
+
+.second-image{
+    background: url("../images/web-28.jpg");
+    height: 13em;
+    margin: auto;
+    background-position-x: center;
+    background-position-y: 30em;
+    overflow: hidden;
+}
+.third-image{
+    background: url("../images/web-62.jpg");
+    height: 13em;
+    margin: auto;
+    background-position-x: center;
+    background-position-y: 39em;
+    overflow: hidden;
+}
+.eff{
+    opacity: 0.3;
+}
+.eff:hover{
+    opacity: 1;
+    transition-duration: 0.3s;
+    transform: scale(1.1);
+}
+
+/* -------------------------------一年目スライド--------------------------------- */
+
+.first-wrapper h1{
+    text-align: center;
+}
+.container{
+    width: 100%;
+    border-collapse: collapse;
+}
+.img-container{
+    height: 80%;
+    width: 80%;
+    border: 1px solid gray;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    position: absolute;
+    background-size: cover;
+}
+.img-container-shothing{
+    height: 80%;
+    width: 80%;
+    border: 1px solid gray;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    position: absolute;
+    background: url("../images/shothing-min.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.img-container-omikuji{
+    height: 80%;
+    width: 80%;
+    border: 1px solid gray;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    position: absolute;
+    background: url("../images/IMG_0030-min.JPG");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-y: -3em;
+}
+.img-container-gori{
+    height: 80%;
+    width: 80%;
+    border: 1px solid gray;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    position: absolute;
+    background: url("../images/gori.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-y: -7em;
+}
+.img-container-goriAR{
+    height: 80%;
+    width: 80%;
+    border: 1px solid gray;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    position: absolute;
+    background: url("../images/goriAR.JPG");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.img-container-Itabit{
+    height: 80%;
+    width: 80%;
+    border: 1px solid gray;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    position: absolute;
+    background: url("../images/DSC_3563-min.JPG");
+    background-size: cover;
+    background-repeat: no-repeat;
+    /* background-position-x: -3em; */
+    background-position-y: -9em;
+}
+.img-container-sokononaha{
+    height: 80%;
+    width: 80%;
+    border: 1px solid gray;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    position: absolute;
+    background: url("../images/IMG_653C83D6F998-1-min.jpeg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    /* background-position-x: -3em; */
+    /* background-position-y: -9em; */
+}
+.img .caption {
+    font-size: 130%;
+    text-align: center;
+    padding-top: 80px;
+    color: #fff;
+    font-weight: bold;
+}
+.img .mask {
+    width: 100%;
+    height: 100%;
+    position: absolute;	/* 絶対位置指定 */
+    top: 0;
+    left: 0;
+    opacity: 0;	/* マスクを表示しない */
+    background-color:rgba(0,0,0,0.6);	/* マスクは半透明 */
+    -webkit-transition:	all 0.2s ease;
+    transition:	all 0.2s ease;
+}
+
+.img:hover {
+    transform: scale(1.1);
+    transition-duration: 0.5s;
+}
+
+/* -------------------------------お問い合わせ--------------------------------- */
+.contact-wrapper{
+    color: white;
+    font-family: serif;
+    width: 75%;
+    height: 75%;
+    position: relative;
+    margin: auto;
+}
+
+#hoge4{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.fa {
+    display: inline-block;
+    font-family: FontAwesome;
+    font-style: normal;
+    font-weight: normal;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+.fa-twitter-square{
+    position: absolute;
+    top: 20%;
+    left: 20%;
+}
+
+.fa-facebook-official{
+    position: absolute;
+    top: 20%;
+    right: 20%;
+}
+
+.fa-github{
+    position: absolute;
+    bottom: 5%;
+    left: 42%;
+}
+
+.contact-title{
+    border-bottom: 1px solid white;
+}
+
+.contents-wrapper{
+    width: 100%;
+    height: 100%;
+    margin: auto;
+}
+
+.button{
+    display: inline;
+    opacity: 0.5;
+}
+
+.button:hover{
+    opacity: 1;
+    transition-duration: 0.5s;
+}
+
+footer{
+    background-color: #191970;
+    height: 3em;
+    width: 100%;
+    position: absolute;
+    bottom: 0px;
+    margin: 0;
+}
+
+footer p{
+    opacity: 1;
+    color: white;
+    text-align: center;
+    margin-top: 0.5em;
+    margin-right: 3.5em;
+}
+/* -------------------------------レスポンシブ--------------------------------- */
+
+@media screen and (min-width:400px) { 
+    /*　for iPhone Landscape　(iPhone 横)　*/
+    .subtitle{
+        margin-right: 1em;
+        padding-top: 1.5em;
+        font-size: 1.5em;
+    }
+    .img-inner{
+        position: relative;
+        top: 70%;
+        left: 40%;
+        font-size: 3em;    
+    }
+    .img{
+        height: 10em;
+        width: 10em;
+        border: 1px solid gray;
+    }
+
+    .img .caption {
+        font-size: 100%;
+        text-align: center;
+        padding-top: 80px;
+        color: #fff;
+    }
+    .img:hover .mask {
+        opacity: 1;	/* マスクを表示する */
+        padding-top: 1em;
+    }
+
+    .res{
+        vertical-align: top;
+    }
+}
+
+
+@media screen and (min-width:768px) and ( max-width:1024px) {
+    /*　for iPad 　*/
+    .img{
+        height: 15em;
+        width: 15em;
+        border: 1px solid gray;
+    }
+    
+}
+
+@media screen and (min-width:1024px) {
+    /*　for PC　*/
+    .subtitle{
+        margin-right: 1em;
+        padding-top: 1.5em;
+        font-size: 2em;
+    }
+
+    .main-profile{
+        margin-bottom: 5em;
+    }
+
+    .img-inner{
+        position: relative;
+        top: 50%;
+        left: 50%;
+        font-size: 5em;    
+    }
+    
+    .img{
+        height: 20em;
+        width: 20em;
+        border: 1px solid gray;
+        position: relative;
+        overflow: hidden;
+    }
+
+    .img .caption {
+        font-size: 130%;
+        text-align: center;
+        padding-top: 80px;
+        color: #fff;
+        font-weight: bold;
+    }
+    .img:hover .mask {
+        opacity: 1;	/* マスクを表示する */
+        padding-top: 40%;
+        transition-duration: 0.5s;
+    }
+    
+}
